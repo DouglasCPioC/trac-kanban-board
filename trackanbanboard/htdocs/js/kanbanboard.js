@@ -523,6 +523,7 @@ kanban.onDataFetchError = function(jqXHR, textStatus, error) {
 };
 
 $(document).ready(function(){
+    TRAC_PROJECT_NAME = "Trac/LogiqsAgro"
     console.log("Session: "+ checkSession());
     console.log(
         "Board ID:", KANBAN_BOARD_ID,
