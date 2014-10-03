@@ -98,6 +98,8 @@ class KanbanBoard:
 
             t['summary'] = ticket.get_value_or_default('summary')
             t['status'] = ticket.get_value_or_default('status')
+            t['owner'] = ticket.get_value_or_default('owner')
+            t['type'] = ticket.get_value_or_default('type')
             self.tickets[str(id)] = t
             valid_ids.append(id)
 
@@ -406,6 +408,7 @@ class KanbanBoard:
 
 class KanbanBoardMacro(WikiMacroBase):
     """
+	v0.3
     Usage:
 
     {{{
