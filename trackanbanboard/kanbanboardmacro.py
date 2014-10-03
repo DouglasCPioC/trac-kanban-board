@@ -38,7 +38,7 @@ class KanbanBoard:
     data_end_regexp = re.compile('\s*}}}')
 
     # These are ticket fields that must be present on all tickets
-    mandatory_fields = ['summary', 'status']
+    mandatory_fields = ['summary', 'status', 'owner', 'type']
 
     # These ticket fields are shown in detail dialog regardless of user's field definitions
     always_shown_fields = ['summary', 'description', 'time', 'changetime']
