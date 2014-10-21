@@ -76,6 +76,15 @@ li.kanban-card
     cursor: pointer;
 }
 
+li.CR, li.FR, li.Review, li.Task, li.Bug, li.Test, li.Support
+{	background-color: #ffaef7;	}
+
+li.Task
+{	background-color: #fff7ae;	}
+
+li.Installation
+{	background-color: #aef7ae;	}
+
 .kanban-card-placeholder
 {
     background-color: rgba(0, 0, 0, 0.1);
