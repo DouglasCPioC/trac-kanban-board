@@ -76,7 +76,7 @@ li.kanban-card
     cursor: pointer;
 }
 
-li.CR, li.FR, li.Review, li.Task, li.Bug, li.Test, li.Support
+li.CR, li.FR, li.Review, li.Bug, li.Test, li.Support
 {	background-color: #ffaef7;	}
 
 li.Task
