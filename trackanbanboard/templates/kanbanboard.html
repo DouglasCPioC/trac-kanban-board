@@ -15,9 +15,11 @@
                     <span data-bind="text: tickets().length + '/' + wip(), css: {'wip-exceeded': tickets().length > wip()}">wip</span>
                 </div>
                 <ul class="card-list" data-bind="sortable: { data: tickets }">
-                    <li class="kanban-card" data-bind="click: $$root.selectTicket">
+                    <li class="kanban-card" data-bind="css: type, click: $$root.selectTicket">
                         <span class="id-label" data-bind="text: idString">id</span>
+                        <span data-bind="text: type">type</span>
                         <span data-bind="text: owner">owner</span>
+                        <span data-bind="text: status">status</span>
 						<br/>
                         <span data-bind="text: summary">summary</span>
                     </li>
